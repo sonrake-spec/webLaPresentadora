@@ -3,6 +3,21 @@
 Este es un proyecto personal de Raquel (no de Coocrea/trabajo). El código vive en GitHub:
 https://github.com/sonrake-spec/webLaPresentadora
 
+Para el contenido, textos y decisiones de diseño de la web, ver `contenido-web.md` en esta
+misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que se avanza.
+
+## Estado de la gestión del hosting/dominio (a fecha de la última sesión)
+
+- Hosting contratado en IONOS (plan Hosting Plus).
+- Dominio lapresentadora.com: transferencia iniciada desde Web Artesanal (Carlos Doral) a
+  IONOS, manteniendo el DNS actual sin cambios hasta que todo esté listo (así no se rompe el
+  correo ni la web actual). Pendiente de que la transferencia se complete (varios días).
+- Correo raquel@lapresentadora.com: sigue en el proveedor antiguo por ahora. Datos técnicos
+  para migrarlo cuando toque: IMAP `imap.servidor-correo.net` puerto 993 SSL/TLS, SMTP
+  `smtp.servidor-correo.net` puerto 587 STARTTLS, usuario raquel@lapresentadora.com.
+- Siguiente paso pendiente: cuando el dominio aparezca activo en la cuenta de IONOS, crear el
+  buzón de correo nuevo ahí e importar los mensajes del buzón antiguo antes de cambiar el MX.
+
 ## Flujo de trabajo en cada sesión
 
 Al **empezar** a trabajar:
