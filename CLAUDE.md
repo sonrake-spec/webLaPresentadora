@@ -15,6 +15,8 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
 - Correo raquel@lapresentadora.com: sigue en el proveedor antiguo por ahora. Datos técnicos
   para migrarlo cuando toque: IMAP `imap.servidor-correo.net` puerto 993 SSL/TLS, SMTP
   `smtp.servidor-correo.net` puerto 587 STARTTLS, usuario raquel@lapresentadora.com.
+  Uso actual del buzón: ~14,3 GB de 29,3 GB de cuota. Sin problema de espacio en IONOS (195 GB
+  compartidos en el plan contratado).
 - Siguiente paso pendiente: cuando el dominio aparezca activo en la cuenta de IONOS, crear el
   buzón de correo nuevo ahí e importar los mensajes del buzón antiguo antes de cambiar el MX.
 
