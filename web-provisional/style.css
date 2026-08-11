@@ -79,20 +79,24 @@ p {
 }
 
 .linkedin {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  margin-top: 20px;
-  color: var(--teal-dark);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin: 28px auto 0;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.linkedin svg {
+  display: block;
 }
 
 .linkedin:hover,
 .linkedin:focus-visible {
-  color: var(--magenta);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 119, 181, 0.35);
 }
 
 @media (max-width: 480px) {
