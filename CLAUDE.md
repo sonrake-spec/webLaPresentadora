@@ -9,16 +9,25 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
 ## Estado de la gestión del hosting/dominio (a fecha de la última sesión)
 
 - Hosting contratado en IONOS (plan Hosting Plus).
-- Dominio lapresentadora.com: transferencia iniciada desde Web Artesanal (Carlos Doral) a
-  IONOS, manteniendo el DNS actual sin cambios hasta que todo esté listo (así no se rompe el
-  correo ni la web actual). Pendiente de que la transferencia se complete (varios días).
-- Correo raquel@lapresentadora.com: sigue en el proveedor antiguo por ahora. Datos técnicos
-  para migrarlo cuando toque: IMAP `imap.servidor-correo.net` puerto 993 SSL/TLS, SMTP
-  `smtp.servidor-correo.net` puerto 587 STARTTLS, usuario raquel@lapresentadora.com.
-  Uso actual del buzón: ~14,3 GB de 29,3 GB de cuota. Sin problema de espacio en IONOS (195 GB
-  compartidos en el plan contratado).
-- Siguiente paso pendiente: cuando el dominio aparezca activo en la cuenta de IONOS, crear el
-  buzón de correo nuevo ahí e importar los mensajes del buzón antiguo antes de cambiar el MX.
+- Dominio lapresentadora.com: transferencia desde Web Artesanal (Carlos Doral) a IONOS
+  **completada**. DNS sin cambios todavía (sigue apuntando igual, no se ha tocado el MX), así
+  que el correo y la web antiguos siguen funcionando con normalidad.
+- Correo raquel@lapresentadora.com: buzón nuevo **ya creado en IONOS** (plan Correo Profesional,
+  50GB, dentro del contrato 300258385). El buzón antiguo (proveedor Carlos Doral) sigue intacto
+  y operativo mientras tanto.
+  - Datos del buzón antiguo (origen): IMAP `imap.servidor-correo.net` puerto 993 SSL/TLS, SMTP
+    `smtp.servidor-correo.net` puerto 587 STARTTLS, usuario raquel@lapresentadora.com.
+    Uso: ~14,3 GB de 29,3 GB de cuota.
+  - **Migración de correo en curso** (lanzada vía la herramienta de migración de IONOS/audriga):
+    copia todos los mensajes del buzón antiguo al nuevo sin borrar nada del origen. Se ejecuta
+    en segundo plano; IONOS avisa por email (a sonrake@gmail.com) cuando termina. Se puede
+    consultar el estado desde IONOS → Correo → Portafolio de correo electrónico →
+    lapresentadora.com → "Migrar los correos electrónicos a IONOS".
+- Siguiente paso pendiente (cuando la migración termine y se confirme que todo llegó bien):
+  1. Vincular el dominio al espacio web de IONOS (tarea aparte, para la web nueva).
+  2. Cambiar el MX de lapresentadora.com para que el correo nuevo entrante vaya a IONOS.
+  3. Avisar a Carlos Doral para cancelar el servicio antiguo antes de fin de septiembre (evitar
+     el borrado irrecuperable de octubre).
 
 ## Flujo de trabajo en cada sesión
 
