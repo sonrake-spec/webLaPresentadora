@@ -1,0 +1,86 @@
+:root {
+  --teal-dark: #1c6d80;
+  --teal-bright: #1ab2bb;
+  --magenta: #e82a89;
+  --mint-bg: #dfefe5;
+  --mint-bg-2: #cfe8dc;
+  --text: #1c6d80;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: "Nunito Sans", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 20% 15%, var(--mint-bg-2) 0%, var(--mint-bg) 45%, var(--mint-bg) 100%);
+  color: var(--text);
+}
+
+.card {
+  width: 100%;
+  max-width: 560px;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 56px 48px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(28, 109, 128, 0.15);
+}
+
+.logo {
+  width: min(260px, 60%);
+  height: auto;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-family: "Baloo 2", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--teal-dark);
+  margin: 0 0 16px;
+  line-height: 1.25;
+}
+
+p {
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  line-height: 1.6;
+  color: #4a6b73;
+  margin: 0 0 32px;
+}
+
+.cta {
+  display: inline-block;
+  font-family: "Baloo 2", "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  background: var(--magenta);
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 999px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background: #c81f72;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 40px 28px;
+    border-radius: 22px;
+  }
+}
