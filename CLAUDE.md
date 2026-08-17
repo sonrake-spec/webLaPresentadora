@@ -23,9 +23,19 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
     en segundo plano; IONOS avisa por email (a sonrake@gmail.com) cuando termina. Se puede
     consultar el estado desde IONOS → Correo → Portafolio de correo electrónico →
     lapresentadora.com → "Migrar los correos electrónicos a IONOS".
+- **Importante**: mientras el MX de lapresentadora.com siga sin cambiar (ver más abajo), el
+  correo nuevo que llega a diario sigue entrando en el buzón antiguo, no en el de IONOS. El
+  buzón de IONOS solo tiene lo que se le copia con estas migraciones — no es aún el buzón "en
+  vivo". Por eso hace falta repetir la migración (o la "Migración-Delta") de vez en cuando hasta
+  que se dé el paso de cambiar el MX.
+- **Ojo con cambiar la contraseña del buzón de IONOS**: si se cambia, cualquier migración que
+  esté en curso o la "Migración-Delta" fallará con "autenticación fallida" (ya pasó una vez,
+  0 correos migrados aunque parecía haber ido bien). Tras cambiar la contraseña, hay que lanzar
+  una migración nueva completa (no delta) desde cero, introduciendo la contraseña nueva a mano.
 - Siguiente paso pendiente (cuando la migración termine y se confirme que todo llegó bien):
   1. Vincular el dominio al espacio web de IONOS (tarea aparte, para la web nueva).
-  2. Cambiar el MX de lapresentadora.com para que el correo nuevo entrante vaya a IONOS.
+  2. Cambiar el MX de lapresentadora.com para que el correo nuevo entrante vaya a IONOS (esto
+     es lo que hace que el buzón nuevo quede "activo" de verdad, sin más migraciones manuales).
   3. Avisar a Carlos Doral para cancelar el servicio antiguo antes de fin de septiembre (evitar
      el borrado irrecuperable de octubre).
 
