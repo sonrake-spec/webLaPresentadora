@@ -47,12 +47,15 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
   esté en curso o la "Migración-Delta" fallará con "autenticación fallida" (ya pasó una vez,
   0 correos migrados aunque parecía haber ido bien). Tras cambiar la contraseña, hay que lanzar
   una migración nueva completa (no delta) desde cero, introduciendo la contraseña nueva a mano.
-- Siguiente paso pendiente (DNS ya cambiado el 28/9/2026, backup hecho, web provisional subida):
-  1. **Vigilar la propagación** (próximos días): confirmar que el correo nuevo entra en el
-     webmail de IONOS y que lapresentadora.com muestra ya la web provisional (no la antigua).
-  2. Confirmar la baja a Carlos Doral una vez verificado lo anterior (plan hablado: confirmar
-     baja hacia el viernes de esta semana o principios de la que viene). Pendiente su respuesta
-     sobre si factura el mes completo de octubre o lo prorratea.
+- **28/9/2026, tarde: propagación confirmada.** lapresentadora.com ya muestra la web provisional
+  "en construcción" en el navegador de Raquel — el DNS se propagó mismo día, más rápido de lo
+  esperado.
+- Siguiente paso pendiente:
+  1. Se ha enviado a Carlos Doral (borrador corregido, pendiente confirmación de envío) el email
+     confirmando que puede cursar la baja **este viernes** (2/10/2026), con la pregunta de si
+     factura el mes completo de octubre o lo prorratea.
+  2. Cuando Carlos confirme la baja: recordar hacer login al Plesk antes de que se ejecute, por
+     si hiciera falta rescatar algo más (backup de web+BD ya hecho el 28/9, ver arriba).
   3. Cuando haya contenido definitivo, sustituir la web provisional por la web real (ver
      `contenido-web.md` para el estado del contenido).
 
