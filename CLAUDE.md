@@ -10,8 +10,22 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
 
 - Hosting contratado en IONOS (plan Hosting Plus).
 - Dominio lapresentadora.com: transferencia desde Web Artesanal (Carlos Doral) a IONOS
-  **completada**. DNS sin cambios todavía (sigue apuntando igual, no se ha tocado el MX), así
-  que el correo y la web antiguos siguen funcionando con normalidad.
+  **completada**.
+- **28/9/2026: DNS cambiado por completo.** El dominio usaba servidores DNS propios del hosting
+  antiguo (`ns12/ns10/ns11.servicio-online.net`) — esto significaba que el MX no se podía tocar
+  solo desde IONOS, había que cambiar los servidores de nombres enteros. Se hizo así:
+  1. Backup completo de la web antigua desde Plesk (archivos httpdocs comprimidos y BD
+     `present_wp_2406` exportada en SQL) — descargados al navegador de Raquel antes del cambio.
+  2. Subida de una web provisional "en construcción" (de `web-provisional/` en este repo:
+     index.html, style.css, assets/logo.png) al espacio web de IONOS, carpeta `/public`.
+  3. Conectado el dominio lapresentadora.com al espacio web de IONOS (carpeta `/public`) con la
+     opción de IONOS de actualizar servidores de nombres — esto cambia TODO el DNS de golpe
+     (MX de correo Y el registro A de la web) a la vez. Confirmado: "Se ha establecido la
+     conexión del dominio con el espacio web."
+  - Efecto: en cuanto se propague (horas), el correo entrante irá directo a IONOS y
+    lapresentadora.com mostrará la web provisional en vez de la web antigua de Web Artesanal.
+  - Pendiente de confirmar en los próximos días: que el correo nuevo llega a IONOS y que la web
+    provisional se ve correctamente en el dominio.
 - Correo raquel@lapresentadora.com: buzón nuevo **ya creado en IONOS** (plan Correo Profesional,
   50GB, dentro del contrato 300258385). El buzón antiguo (proveedor Carlos Doral) sigue intacto
   y operativo mientras tanto.
@@ -33,21 +47,14 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
   esté en curso o la "Migración-Delta" fallará con "autenticación fallida" (ya pasó una vez,
   0 correos migrados aunque parecía haber ido bien). Tras cambiar la contraseña, hay que lanzar
   una migración nueva completa (no delta) desde cero, introduciendo la contraseña nueva a mano.
-- Siguiente paso pendiente (migración ya verificada, pendiente de ejecutar):
-  1. **Cambiar el MX de lapresentadora.com** para que el correo nuevo entrante vaya a IONOS —
-     siguiente acción a realizar (plan: hacerlo cuanto antes; tras el cambio, la propagación del
-     DNS puede tardar horas, así que conviene vigilar unos días tanto el correo nuevo en IONOS
-     como el antiguo, por si algo llega aún al buzón viejo durante la transición).
-  2. Antes de dar la baja a Carlos: descargar backup completo de la web antigua desde Plesk
-     (acceso ya facilitado por Carlos) — archivos + base de datos, por si se quiere recuperar
-     algo del diseño/contenido viejo más adelante. El borrado de octubre en el hosting antiguo es
-     irreversible.
-  3. Confirmar la baja a Carlos Doral una vez verificado que el correo nuevo entra bien en IONOS
-     tras el cambio de MX (plan hablado: confirmar baja hacia el viernes de esta semana o
-     principios de la que viene). Pendiente su respuesta sobre si factura el mes completo de
-     octubre o lo prorratea.
-  4. Vincular el dominio al espacio web de IONOS (tarea aparte, para la web nueva) — no bloquea
-     lo anterior.
+- Siguiente paso pendiente (DNS ya cambiado el 28/9/2026, backup hecho, web provisional subida):
+  1. **Vigilar la propagación** (próximos días): confirmar que el correo nuevo entra en el
+     webmail de IONOS y que lapresentadora.com muestra ya la web provisional (no la antigua).
+  2. Confirmar la baja a Carlos Doral una vez verificado lo anterior (plan hablado: confirmar
+     baja hacia el viernes de esta semana o principios de la que viene). Pendiente su respuesta
+     sobre si factura el mes completo de octubre o lo prorratea.
+  3. Cuando haya contenido definitivo, sustituir la web provisional por la web real (ver
+     `contenido-web.md` para el estado del contenido).
 
 ## Flujo de trabajo en cada sesión
 
