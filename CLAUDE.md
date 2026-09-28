@@ -18,11 +18,14 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
   - Datos del buzón antiguo (origen): IMAP `imap.servidor-correo.net` puerto 993 SSL/TLS, SMTP
     `smtp.servidor-correo.net` puerto 587 STARTTLS, usuario raquel@lapresentadora.com.
     Uso: ~14,3 GB de 29,3 GB de cuota.
-  - **Migración de correo en curso** (lanzada vía la herramienta de migración de IONOS/audriga):
-    copia todos los mensajes del buzón antiguo al nuevo sin borrar nada del origen. Se ejecuta
-    en segundo plano; IONOS avisa por email (a sonrake@gmail.com) cuando termina. Se puede
-    consultar el estado desde IONOS → Correo → Portafolio de correo electrónico →
-    lapresentadora.com → "Migrar los correos electrónicos a IONOS".
+  - **Migraciones de correo completadas dos veces**: la primera migración completa (11.08.2026,
+    9.602 correos) y una segunda de recuperación lanzada el 28/9/2026 para traer todo lo que
+    llegó durante el verano (buzón solo tenía correos hasta el 17/8, faltaban ~6 semanas). La
+    segunda se lanzó igual que la primera, desde migracionemail.ionos.es, con la contraseña de
+    origen y de destino introducidas por Raquel a mano. Está corriendo en segundo plano; IONOS
+    avisa por email (a sonrake@gmail.com) cuando termina. Se puede consultar el estado desde
+    IONOS → Correo → Portafolio de correo electrónico → lapresentadora.com → "Migrar los correos
+    electrónicos a IONOS", o con el enlace que envía IONOS por email.
 - **Importante**: mientras el MX de lapresentadora.com siga sin cambiar (ver más abajo), el
   correo nuevo que llega a diario sigue entrando en el buzón antiguo, no en el de IONOS. El
   buzón de IONOS solo tiene lo que se le copia con estas migraciones — no es aún el buzón "en
@@ -32,12 +35,14 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
   esté en curso o la "Migración-Delta" fallará con "autenticación fallida" (ya pasó una vez,
   0 correos migrados aunque parecía haber ido bien). Tras cambiar la contraseña, hay que lanzar
   una migración nueva completa (no delta) desde cero, introduciendo la contraseña nueva a mano.
-- Siguiente paso pendiente (cuando la migración termine y se confirme que todo llegó bien):
-  1. Vincular el dominio al espacio web de IONOS (tarea aparte, para la web nueva).
-  2. Cambiar el MX de lapresentadora.com para que el correo nuevo entrante vaya a IONOS (esto
+- Siguiente paso pendiente (cuando esta segunda migración termine y se confirme que todo llegó
+  bien, comprobando en el webmail de IONOS que ya aparecen correos de septiembre):
+  1. Cambiar el MX de lapresentadora.com para que el correo nuevo entrante vaya a IONOS (esto
      es lo que hace que el buzón nuevo quede "activo" de verdad, sin más migraciones manuales).
-  3. Avisar a Carlos Doral para cancelar el servicio antiguo antes de fin de septiembre (evitar
-     el borrado irrecuperable de octubre).
+  2. Vincular el dominio al espacio web de IONOS (tarea aparte, para la web nueva).
+  3. Avisar a Carlos Doral para cancelar el servicio antiguo. **Ojo: el plazo de CLAUDE.md decía
+     "antes de fin de septiembre" y hoy ya es 28/9/2026** — hay que contactarlo cuanto antes,
+     confirmando primero que la migración de recuperación ha terminado bien.
 
 ## Flujo de trabajo en cada sesión
 
