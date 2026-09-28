@@ -50,12 +50,17 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
 - **28/9/2026, tarde: propagación confirmada.** lapresentadora.com ya muestra la web provisional
   "en construcción" en el navegador de Raquel — el DNS se propagó mismo día, más rápido de lo
   esperado.
+- **28/9/2026: correo nuevo verificado y email a Carlos enviado.**
+  - Prueba de recepción hecha: un correo mandado a raquel@lapresentadora.com llega ya al buzón de
+    IONOS. El MX está funcionando en vivo.
+  - Email enviado a Carlos Doral (desde el webmail antiguo, respondiendo al hilo original)
+    confirmando que puede cursar la baja **el viernes 2/10/2026**, con la pregunta de si factura
+    el mes completo de octubre o lo prorratea. Pendiente su respuesta.
 - Siguiente paso pendiente:
-  1. Se ha enviado a Carlos Doral (borrador corregido, pendiente confirmación de envío) el email
-     confirmando que puede cursar la baja **este viernes** (2/10/2026), con la pregunta de si
-     factura el mes completo de octubre o lo prorratea.
-  2. Cuando Carlos confirme la baja: recordar hacer login al Plesk antes de que se ejecute, por
-     si hiciera falta rescatar algo más (backup de web+BD ya hecho el 28/9, ver arriba).
+  1. Esperar respuesta de Carlos sobre la baja/facturación.
+  2. Cuando Carlos confirme la baja: recordar que el backup de la web antigua (archivos + BD) ya
+     está hecho (28/9/2026, ver arriba) — no haría falta volver a entrar en Plesk salvo que se
+     quiera rescatar algo más antes del borrado de octubre.
   3. Cuando haya contenido definitivo, sustituir la web provisional por la web real (ver
      `contenido-web.md` para el estado del contenido).
 
