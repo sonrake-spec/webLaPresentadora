@@ -56,12 +56,26 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
   - Email enviado a Carlos Doral (desde el webmail antiguo, respondiendo al hilo original)
     confirmando que puede cursar la baja **el viernes 2/10/2026**, con la pregunta de si factura
     el mes completo de octubre o lo prorratea. Pendiente su respuesta.
+- **29/9/2026: certificado SSL solicitado.** Al conectar el dominio al espacio web el día
+  anterior, IONOS no activa el SSL al instante — Raquel vio el aviso "no seguro" en el navegador
+  al entrar en lapresentadora.com. Comprobado en IONOS → Dominios & SSL: "0 de 2" certificados
+  usados. Se activó gratis el incluido en el plan ("Tarjeta comodín SSL de inicio", cubre
+  lapresentadora.com y *.lapresentadora.com) desde Dominios y SSL → Gestiona tus certificados →
+  Configurar certificado → "Uso con mi página web en IONOS" (se instala solo). Solicitud enviada
+  con éxito ("Operación finalizada con éxito", 1 de 2 usados). Pendiente de confirmar: que IONOS
+  termine de emitir/instalar el certificado (puede tardar un rato) y que el aviso desaparezca.
+- Documento con el contenido/testimonios de la web antigua (`contenido-web-antigua-lapresentadora.docx`)
+  y el listado de URLs para redirecciones (`redirecciones-web-antigua.md`) ya están en este repo,
+  extraídos de las versiones archivadas del sitio (Wayback Machine) — para compartir en el chat
+  de Diseño Web Raquel.
 - Siguiente paso pendiente:
   1. Esperar respuesta de Carlos sobre la baja/facturación.
   2. Cuando Carlos confirme la baja: recordar que el backup de la web antigua (archivos + BD) ya
      está hecho (28/9/2026, ver arriba) — no haría falta volver a entrar en Plesk salvo que se
      quiera rescatar algo más antes del borrado de octubre.
-  3. Cuando haya contenido definitivo, sustituir la web provisional por la web real (ver
+  3. Confirmar que el certificado SSL ha terminado de instalarse y que el aviso "no seguro" ha
+     desaparecido.
+  4. Cuando haya contenido definitivo, sustituir la web provisional por la web real (ver
      `contenido-web.md` para el estado del contenido).
 
 ## Flujo de trabajo en cada sesión
