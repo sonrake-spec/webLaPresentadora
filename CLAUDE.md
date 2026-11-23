@@ -68,14 +68,15 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
   y el listado de URLs para redirecciones (`redirecciones-web-antigua.md`) ya están en este repo,
   extraídos de las versiones archivadas del sitio (Wayback Machine) — para compartir en el chat
   de Diseño Web Raquel.
+- **23/11/2026: baja con Carlos Doral ya hecha** (confirmado por Raquel). La web antigua y el
+  buzón antiguo ya no son necesarios; el backup (archivos + BD) está hecho desde el 28/9.
+- **23/11/2026: SSL verificado.** https://lapresentadora.com carga por HTTPS y muestra la web
+  provisional (con botón de correo y icono de LinkedIn, añadidos desde el chat "Diseño web
+  Raquel", que sube cambios a este mismo repo).
 - Siguiente paso pendiente:
-  1. Esperar respuesta de Carlos sobre la baja/facturación.
-  2. Cuando Carlos confirme la baja: recordar que el backup de la web antigua (archivos + BD) ya
-     está hecho (28/9/2026, ver arriba) — no haría falta volver a entrar en Plesk salvo que se
-     quiera rescatar algo más antes del borrado de octubre.
-  3. Confirmar que el certificado SSL ha terminado de instalarse y que el aviso "no seguro" ha
-     desaparecido.
-  4. Cuando haya contenido definitivo, sustituir la web provisional por la web real (ver
+  1. Sustituir la web provisional por la web definitiva (trabajo en el chat "Diseño web Raquel").
+  2. Configurar las redirecciones (ver `redirecciones-web-antigua.md`) cuando esté la web nueva.
+  3. (Ya resuelto: baja con Carlos y SSL.) Cuando haya contenido definitivo, sustituir la web provisional por la web real (ver
      `contenido-web.md` para el estado del contenido).
 
 ## Flujo de trabajo en cada sesión
