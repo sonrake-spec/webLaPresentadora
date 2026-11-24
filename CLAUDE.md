@@ -94,8 +94,14 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
   4. Artefactos en la nube para estados/paneles.
   5. Publicación de la web en IONOS: la hace Claude; el usuario solo inicia sesión. Claude nunca
      escribe contraseñas y pide confirmación antes de publicar.
-- Pendiente: activar conectores (Magnific, Microsoft 365) en la cuenta de Raquel; crear la
-  primera skill (diseño web). (`departamento-comercial/web/` ya creada, 24/11/2026.)
+- **24/11/2026: fuente de verdad elegida = carpeta de OneDrive** en el PC de Raquel:
+  `C:\Users\sonra\OneDrive\LA PRESENTADORA - COMERCIAL\` (subcarpetas `marca`,
+  `tono-y-servicios`, `testimonios-y-clientes`, `trabajos`; ver `LEEME.txt` dentro). Claude la lee
+  desde el PC (pedir acceso a esa carpeta en cada sesión). El conector Microsoft 365 NO sirve con la
+  cuenta personal (sonrake@gmail.com): solo acepta cuentas profesionales/educativas — pendiente
+  resolver si se contrata una cuenta profesional.
+- Pendiente: llenar la carpeta de OneDrive con el material de marca; aclarar si existe conector de
+  Magnific; crear la primera skill (diseño web). (`departamento-comercial/web/` ya creada, 24/11/2026.)
 - PC de Raquel: repo en `C:\WEB RAKE\webLaPresentadora`; clave SSH de GitHub (añadida a la cuenta sonrake-spec como
   "PC Raquel - WEB RAKE", no como deploy key) en `C:\WEB RAKE\.claves\github_webrake`, fuera del repo. No compartir esa carpeta.
 
