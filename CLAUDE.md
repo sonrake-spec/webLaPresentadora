@@ -79,6 +79,27 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
   3. (Ya resuelto: baja con Carlos y SSL.) Cuando haya contenido definitivo, sustituir la web provisional por la web real (ver
      `contenido-web.md` para el estado del contenido).
 
+## Plan: departamento de gestión comercial (acordado 24/11/2026)
+
+- Se trabaja desde dos PCs (el de Raquel y el de David, que colabora) con la MISMA cuenta de
+  Claude (sonrake@gmail.com). Desde ahora el trabajo se hace en el PC de Raquel.
+- Objetivo: montar un sistema de agentes (skills) para La Presentadora. Primer departamento:
+  gestión comercial = web (ahora) + redes sociales + promoción con clientes. Hoy: solo web.
+- Arquitectura acordada, sencilla y que no depende de un PC:
+  1. GitHub (este repo) = trabajo y archivos. Carpeta `departamento-comercial/web/` (pendiente de
+     crear). Claude gestiona git; David/Raquel no tocan GitHub.
+  2. Skills = guardadas en la cuenta de Claude (compartibles), con copia en el repo.
+  3. Contexto de referencia (marca, tono, servicios, testimonios) = Magnific (biblioteca de marca,
+     conector) y/o Proyecto de Claude "WEB RAKE 2026". Microsoft 365 (OneDrive, solo lectura)
+     como opción. Elegir UNA fuente de verdad.
+  4. Artefactos en la nube para estados/paneles.
+  5. Publicación de la web en IONOS: la hace Claude; el usuario solo inicia sesión. Claude nunca
+     escribe contraseñas y pide confirmación antes de publicar.
+- Pendiente: activar conectores (Magnific, Microsoft 365) en la cuenta de Raquel; crear
+  `departamento-comercial/web/`; crear la primera skill (diseño web).
+- PC de Raquel: repo en `C:\WEB RAKE\webLaPresentadora`; clave de GitHub (deploy key con escritura)
+  en `C:\WEB RAKE\.claves`, fuera del repo. No compartir esa carpeta.
+
 ## Flujo de trabajo en cada sesión
 
 Al **empezar** a trabajar:
