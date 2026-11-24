@@ -1,5 +1,7 @@
 # Departamento de gestión comercial · Web
 
-Esta carpeta es el departamento de gestión comercial de **La Presentadora**, en su parte web.
+Departamento de gestión comercial de **La Presentadora**, parte web.
 
-Aquí se reúne todo lo que sirve para que la web de lapresentadora.com funcione como herramienta comercial y traiga trabajo a La Presentadora y a Raquel: objetivos, mensajes, captación de contactos, seguimiento de resultados e ideas de mejora.
+La gestión comercial tiene tres áreas: web, redes sociales y promoción con clientes. Esta carpeta es la de la **web**: lo necesario para que lapresentadora.com sea una herramienta comercial que traiga trabajo a La Presentadora y a Raquel.
+
+Aquí van los archivos de trabajo de la web (planes, textos, estados) y la copia de las skills de este departamento, empezando por la de diseño web. Claude se encarga de git; ver `CLAUDE.md` en la raíz del repo.

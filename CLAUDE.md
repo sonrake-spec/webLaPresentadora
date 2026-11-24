@@ -86,8 +86,7 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
 - Objetivo: montar un sistema de agentes (skills) para La Presentadora. Primer departamento:
   gestión comercial = web (ahora) + redes sociales + promoción con clientes. Hoy: solo web.
 - Arquitectura acordada, sencilla y que no depende de un PC:
-  1. GitHub (este repo) = trabajo y archivos. Carpeta `departamento-comercial/web/` (pendiente de
-     crear). Claude gestiona git; David/Raquel no tocan GitHub.
+  1. GitHub (este repo) = trabajo y archivos. Carpeta `departamento-comercial/web/` (creada 24/11/2026). Claude gestiona git; David/Raquel no tocan GitHub.
   2. Skills = guardadas en la cuenta de Claude (compartibles), con copia en el repo.
   3. Contexto de referencia (marca, tono, servicios, testimonios) = Magnific (biblioteca de marca,
      conector) y/o Proyecto de Claude "WEB RAKE 2026". Microsoft 365 (OneDrive, solo lectura)
@@ -95,10 +94,10 @@ misma carpeta — es la fuente de verdad de esa parte, se actualiza a medida que
   4. Artefactos en la nube para estados/paneles.
   5. Publicación de la web en IONOS: la hace Claude; el usuario solo inicia sesión. Claude nunca
      escribe contraseñas y pide confirmación antes de publicar.
-- Pendiente: activar conectores (Magnific, Microsoft 365) en la cuenta de Raquel; crear
-  `departamento-comercial/web/`; crear la primera skill (diseño web).
-- PC de Raquel: repo en `C:\WEB RAKE\webLaPresentadora`; clave de GitHub (deploy key con escritura)
-  en `C:\WEB RAKE\.claves`, fuera del repo. No compartir esa carpeta.
+- Pendiente: activar conectores (Magnific, Microsoft 365) en la cuenta de Raquel; crear la
+  primera skill (diseño web). (`departamento-comercial/web/` ya creada, 24/11/2026.)
+- PC de Raquel: repo en `C:\WEB RAKE\webLaPresentadora`; clave SSH de GitHub (añadida a la cuenta sonrake-spec como
+  "PC Raquel - WEB RAKE", no como deploy key) en `C:\WEB RAKE\.claves\github_webrake`, fuera del repo. No compartir esa carpeta.
 
 ## Flujo de trabajo en cada sesión
 
